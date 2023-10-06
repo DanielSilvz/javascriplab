@@ -1,0 +1,155 @@
+body {
+    background-image: url("https://www.spriters-resource.com/resources/sheets/191/194486.png?updated=1680160506");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: black;
+    font-family: 'Mooli', sans-serif;
+    color: rgb(45, 247, 220);
+
+}
+header {
+  text-align:center;
+  color: rgb(2, 240, 248);
+  font-size:xx-large;
+  
+  }
+#Headers
+.form-control-dark {
+    border-color: var(--bs-gray);
+  }
+  .form-control-dark:focus {
+    border-color: #fff;
+    box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+  }
+  
+  .text-small {
+    font-size: 85%;
+  }
+  
+  .dropdown-toggle:not(:focus) {
+    outline: 0;
+  }
+
+  #register {
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 48, 90);
+    font-size: larger;
+    border-radius: 0.5rem ;
+    margin: 1rem;
+    cursor: pointer;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    font-family: 'Silkscreen',cursive;
+    }
+    
+    #registro {
+        color: rgb(100, 183, 255);
+    }
+    
+    #textoT {
+        color: rgb(67, 202, 243);
+        font-size:x-large ;
+        text-align: center;
+        margin: 0.3rem;
+        
+    
+    }
+    
+    .text-input {
+        color: rgb(33, 12, 219);
+        text-align: center;
+        font-size:medium;
+        border-radius: 0.5rem ;
+        
+    
+    }
+  
+    #textoF {
+        color: rgb(67, 202, 243);
+        font-size:x-large ;
+        text-align: center;
+        margin: 0.3rem;
+        
+    
+    }
+
+
+
+
+
+
+
+    article {
+      position:relative;
+      transition: all .3s ease;
+      width: 1px;
+      margin: 250px;
+      display: inline-block;
+      
+  }
+  article img:first-child{
+  
+      box-shadow: 0 60px 60px
+  -60px rgba(0, 30, 255, 0.5);
+  border-radius: 20px;
+  object-fit:cover;
+  width: 150%;
+  
+  }
+  article img:last-child{
+      position: absolute;
+      width: 270px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0%;
+      transform:  translateY(5%);
+      transition: .3s ease;
+      opacity: 0;
+  }
+  article:hover{
+      transform: 
+      perspective(250px)
+  
+  }
+  article::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      height: 100%;
+      width: 1px;
+      background-image:
+  linear-gradient(
+      to bottom,
+      transparent 100%,
+      rgba(0, 0 ,0 ,0.5) 50%,
+      rgba(0, 0 ,0) 95%
+      );
+      opacity: 1;
+      transition: all .1s ease;
+  }
+  article:hover::before
+  {
+      opacity: 1;
+  }
+  article:hover img:last-child
+  {
+      opacity: 1;
+      transform: translateY(-1%);
+  }
+
+  @media only screen and (min-width: 480px){
+
+    #cabeza {
+        min-width: 3rem;
+        justify-content:space-between
+    }
+
+    .cabeza {
+        flex-direction: row;
+        text-align: start;
+    }
+
+
+
+}
